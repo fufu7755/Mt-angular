@@ -1,0 +1,13 @@
+<header ng-include="'views/partials/header.html'"></header>
+<section ng-controller="clubsController" ng-show="ready">
+    <breadcrumb></breadcrumb>
+    <h4><input ng-model="query.name"></h4>
+    <div>
+        <h4>{{cityName}}</h4>
+        <div dir-paginate="club in clubs | filter: query | itemsPerPage: 5">
+            <h4><a href="/alliances/{{allianceId}}/clubs/{{club.id}}">{{club.name}}</a></h4>
+        </div>
+        <dir-pagination-controls template-url="/lib/angularUtils-pagination/dirPagination.tpl.html">
+        </dir-pagination-controls>
+    </div>
+</section>
