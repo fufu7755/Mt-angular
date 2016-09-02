@@ -2,14 +2,10 @@ window.onload = function() {
     $('body').addClass('firstSection');
 }
 
-<<<<<<< HEAD
 window.setTimeout(function () {
         $(".tab-btn .item").eq(0).trigger("click")
     },
     1500);
-=======
-window.setTimeout(function () {$(".tab-btn .item").eq(0).trigger("click")}, 1500);
->>>>>>> 34fef6c75dd3d350750fb7e5fb173acd600a7a3f
 
 $(document).on("click", ".tab-btn .item", function() {
 
@@ -21,8 +17,6 @@ $(document).on("click", ".tab-btn .item", function() {
                 banner_index()
             },
             5000)
-
-
 });
 
 
