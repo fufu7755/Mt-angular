@@ -457,7 +457,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-size: 36px;
     color: #666;
     padding: 2% 0;
-    margin-top: 71px;
 }
 
 .title3 b {
@@ -484,10 +483,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .font-24 {
     font-size: 24px;
+    color: #666;
 }
 
 .font-18 {
     font-size: 18px;
+    height: 30px;
+    color: #666;
 }
 
 /* 第二个区块 案例效果 */
@@ -495,6 +497,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     position: relative;
     width:100%;
     height:75%;
+}
+
+.custom-top {
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.custom-box {
+    width: 100%;
+    height: 80%;
+    position: relative;
 }
 
 ul.portfolio-items {
@@ -526,7 +540,10 @@ ul.p_training >li {
 
 ul.portfolio-items .mix { display: none; }
 
-ul.portfolio-items img { display: block; width:100%; }
+ul.portfolio-items img {
+    display: block;
+    width:100%;
+}
 
 .work-item {
     position: relative;
@@ -606,13 +623,14 @@ ul.portfolio-items li:hover .image-extra {
     margin-bottom: 6px;
     color: #fff;
     text-transform: uppercase; font-size:18px;
+    font-weight: 300;
 }
 
 
 .extra-category {
     margin-bottom: 0;
     color: #fff;
-    font-weight: 300;font-size:16px;
+    font-weight: 200;font-size:16px;
 }
 
 /* Demo Css Image Hover Effect */
@@ -676,7 +694,7 @@ ul.portfolio-items li:hover .image-extra {
     display:block;
     position:relative;
     z-index:10;
-    
+
 }
 .demo-3 figure figcaption {
     display:block;
@@ -772,7 +790,7 @@ ul.portfolio-items li:hover .image-extra {
 .index-banner .tab-con{ width:100%; height: 100%; overflow:hidden; margin:0 auto;}
 .index-banner .tab-con .item {
     width:100%;
-    height: 100%;
+    height: 850px;
     position:absolute;
     opacity:0;
     top:0px;
@@ -791,6 +809,83 @@ ul.portfolio-items li:hover .image-extra {
     background-size: cover;
 }
 
+.portfolio-items li.clients-item {
+    width: 12.5%;
+    max-width: 12.5%;
+}
+
+.client {
+    border-right: 1px solid #efeded;
+
+}
+
+.portfolio-items li:last-child .client, .portfolio-items li:nth-child(8) .client{
+    border-right: none;
+}
+
+.portfolio-items li .client img {
+    max-height: 100px;
+}
+
+.portfolio-items li:first-child .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(2) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(3) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(4) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(5) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(6) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(7) .client{
+    border-bottom: 1px solid #efeded;
+}
+.portfolio-items li:nth-child(8) .client{
+    border-bottom: 1px solid #efeded;
+}
+
+.navbar-toggle {
+    margin-bottom: 0;
+}
+
+.navbar-toggle .icon-bar {
+    display: none;
+}
+
+.navbar-toggle.collapsed .icon-bar {
+    display: block;
+}
+
+.closed {
+    display: block;
+    color: #666;
+    font-size: 24px;
+}
+
+.collapsed .closed {
+    display: none;
+}
+
+.email {
+    font-size: 18px;
+    color: #00a2c2;
+    margin: 18px 0;
+}
+
+ul.portfolio-items >li.info-item {
+    position: relative;
+    width: 33.33%;
+    max-width: 33.33%;
+}
+
 
 /* Responsive Css */
 
@@ -803,6 +898,41 @@ ul.portfolio-items li:hover .image-extra {
 @media (max-width: 1024px)  {
     .navbar-nav >li >a {
         padding: 25px 10px;
+    }
+
+    .portfolio-items li.clients-item {
+        width: 25%;
+        max-width: 25%;
+    }
+
+    .client {
+        border-right: 1px solid #efeded;
+
+    }
+
+    .portfolio-items li:last-child .client, .portfolio-items li:nth-child(4) .client{
+        border-right: none;
+    }
+
+    .portfolio-items li:nth-child(8) .client, .portfolio-items li:nth-child(12) .client{
+        border-right: none;
+    }
+
+    .portfolio-items li:nth-child(9) .client{
+        border-bottom: 1px solid #efeded;
+    }
+    .portfolio-items li:nth-child(10) .client{
+        border-bottom: 1px solid #efeded;
+    }
+    .portfolio-items li:nth-child(11) .client{
+        border-bottom: 1px solid #efeded;
+    }
+    .portfolio-items li:nth-child(12) .client{
+        border-bottom: 1px solid #efeded;
+    }
+
+    .title3 {
+        font-size: 28px;
     }
 }
 
@@ -864,10 +994,6 @@ ul.portfolio-items li:hover .image-extra {
         background: #00a2c2;
     }
 
-    .firstSection .navbar-toggle .icon-bar {
-        background: #fff;
-    }
-
     .navbar-toggle:focus .icon-bar, .navbar-toggle:hover .icon-bar {
         background: #00a2c2;
     }
@@ -878,16 +1004,6 @@ ul.portfolio-items li:hover .image-extra {
 
     .navbar-collapse .navbar-nav >li.active >a, .navbar-collapse .navbar-nav >li > a:hover {
         border-bottom: 0;
-    }
-
-    .firstSection .navbar-collapse .navbar-nav >li >a {
-        color: #666;
-    }
-
-    .firstSection .navbar-collapse .navbar-nav >li.active >a,
-    .firstSection .navbar-collapse .navbar-nav >li >a:hover {
-        background-color: rgba(240, 240, 240, 0.3);
-        color: #00a2c2;
     }
 
     .two-col {
@@ -910,14 +1026,99 @@ ul.portfolio-items li:hover .image-extra {
 
     .title4 {
         position: relative;
-        font-size: 18px;
+        font-size: 24px;
         top: 0;
         padding: 10px 20px;
     }
 
     .title4 b {
+        font-size: 24px;
+    }
+
+    .extra-title {
+        font-size: 16px;
+    }
+    .extra-category {
+        font-size: 14px;
+    }
+    .logo {
+        width: 140px;
+    }
+
+    .button.default, .button.blue {
+        padding: 10px 25px;
+        font-size: 15px;
+        margin-top: 0;
+        bottom: 30px;
+    }
+
+    .title3 {
+        font-size: 24px;
+        margin-top: 20px;
+        padding-top: 0;
+        padding: 10px 20px;
+    }
+
+    .title5 {
+        margin-top: 20px;
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .title3 b {
+        font-size: 24px;
+    }
+
+    .font-24 {
         font-size: 18px;
     }
+
+    #mdr10-team {
+        background-image: url(../img/team-small.jpg);
+    }
+
+    #mdr10-team .title3 {
+        font-size: 24px;
+        color: #666;
+        padding-top: 0;
+        position: absolute;
+        top: 50%;
+    }
+
+    .copyright .nav-second-main li {
+        font-size: 18px;
+    }
+
+    .brand-logo {
+        background-size: 132px;
+
+    }
+    .firstSection .brand-logo {
+        background: url("../img/logo_blue.png") 0 0 no-repeat;
+        background-size: 132px;
+        width: 132px;
+    }
+
+    .firstSection #header {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .firstSection .navbar-nav >li.active >a, .firstSection .navbar-nav >li.active a:hover {
+        background: transparent;
+        color: #00a2c2;
+    }
+    .firstSection .navbar-nav >li >a {
+        color: #666;
+    }
+    .navbar-nav >li.active b {
+        background-color: #fff;
+    }
+
+    .firstSection .intro {
+        padding: 0;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -950,7 +1151,7 @@ ul.portfolio-items li:hover .image-extra {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .effect .back:hover {
         bottom:-60px;
         padding-top:60px
@@ -964,38 +1165,7 @@ ul.portfolio-items li:hover .image-extra {
         background-image: url(../img/coop-small.jpg);
     }
 
-    .title3 {
-        font-size: 18px;
-        margin-top: 20px;
-        padding-top: 0;
-        padding: 10px 20px;
-    }
 
-    .title5 {
-        margin-top: 20px;
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-
-    .font-24 {
-        font-size: 14px;
-    }
-
-    .title3 b {
-        font-size: 18px;
-    }
-
-    #mdr10-team {
-        background-image: url(../img/team-small.jpg);
-    }
-
-    #mdr10-team .title3 {
-        font-size: 24px;
-        color: #666;
-        padding-top: 0;
-        position: absolute;
-        top: 50%;
-    }
 
     #mdr10-culture {
         background-image: url(../img/company-small.jpg);
@@ -1037,13 +1207,6 @@ ul.portfolio-items li:hover .image-extra {
         font-size: 14px;
     }
 
-    .button.default, .button.blue {
-        padding: 10px 25px;
-        font-size: 15px;
-        margin-top: 0;
-        bottom: 30px;
-    }
-
     .zx {
         margin-top: 0;
     }
@@ -1069,6 +1232,26 @@ ul.portfolio-items li:hover .image-extra {
         top: 50%;
     }
 
+    .demo-3 li img {
+        width: 80%;
+
+        display: inline-block;
+    }
+
+    .firstSection .navbar-nav >li.email {
+        color: #00a2c2;
+    }
+
+    .index-banner .tab-con .item {
+        height: 550px;
+    }
+
+    .zx img {
+        max-height: 120px;
+    }
+    .index-banner .tab-con .item4 {
+        background-image: url(../img/sm1.jpg) !important;
+    }
+
+
 }
-
-
