@@ -1,12 +1,8 @@
 window.onload = function() {
     $('body').addClass('firstSection');
-    $(".tab-btn .item").eq(0).trigger("click");
 }
 
-window.setTimeout(function () {
-        $(".tab-btn .item").eq(0).trigger("click")
-    },
-    500);
+window.setTimeout(function () {$(".tab-btn .item").eq(0).trigger("click")}, 1500);
 
 $(document).on("click", ".tab-btn .item", function() {
 
