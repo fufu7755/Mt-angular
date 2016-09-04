@@ -6,7 +6,7 @@ angular
       getSlide: function () {
         promise = $http({
           method: 'GET',
-          url: baseUrl + 'home_slide_images',
+          url: baseUrl + 'slide_images',
           params: {},
         }).success(function (response) {
           return response.result;

@@ -9,7 +9,7 @@ angular.module('hshs', [
   'ui.mask'
 ]).
 constant(
-  'baseUrl', 'http://data-mass.nodefu.net/api/'
+  'baseUrl', 'http://data-soul.nodefu.net/api/'
 ).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
