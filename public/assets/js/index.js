@@ -9,25 +9,24 @@ var totalSlideNumber = $(".background").length;
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(evt) {
-  var totalSlideNumber = $(".background").length;
-
-
-  if(currentSlideNumber >= 3){
+  totalSlideNumber = $(".background").length;
+  if (currentSlideNumber >= 3) {
     $('.scrollup').fadeIn();
   }
 
-  if(currentSlideNumber < 3){
+  if (currentSlideNumber < 3) {
     $('.scrollup').fadeOut();
   }
-  if(currentSlideNumber == 0) {
+  if (currentSlideNumber == 0) {
     $('body').addClass('firstSection');
   }
-  if(currentSlideNumber != 0) {
+  if (currentSlideNumber != 0) {
     $('body').removeClass('firstSection');
   }
   if (isFirefox) {
     //Set delta for Firefox
-    delta = evt.detail * (-120);
+    // default value = -120
+    delta = evt.detail * (-10);
   } else if (isIe) {
     //Set delta for IE
     delta = -evt.deltaY;
@@ -42,7 +41,7 @@ function parallaxScroll(evt) {
       ticking = true;
       if (currentSlideNumber !== totalSlideNumber - 1) {
         currentSlideNumber++;
-        console.log(totalSlideNumber);
+        console.log(currentSlideNumber);
         nextItem();
         $(".background").removeClass('active');
         $(".background").eq(currentSlideNumber).addClass('active');
@@ -53,7 +52,6 @@ function parallaxScroll(evt) {
       //Up scroll
       ticking = true;
       if (currentSlideNumber !== 0) {
-
         currentSlideNumber--;
       }
       previousItem();
@@ -67,7 +65,7 @@ function parallaxScroll(evt) {
 
 // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
 function slideDurationTimeout(slideDuration) {
-  setTimeout(function() {
+  setTimeout(function () {
     ticking = false;
   }, slideDuration);
 }
