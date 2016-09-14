@@ -1,3 +1,7 @@
+//Check
+var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent && !navigator.userAgent.match('CriOS');
+
 window.onload = function() {
     $('body').addClass('firstSection');
 }
@@ -18,7 +22,6 @@ $(document).on("click", ".tab-btn .item", function() {
             },
             5000)
 });
-
 
 function banner_index(btn_item) {
     var i_now;
@@ -46,11 +49,11 @@ function banner_index(btn_item) {
     $tab_con.find(".active").removeClass("active").animate({
             opacity: 0
         },
-        500);
+        400);
     $tab_con.find(".item").eq(i_next).addClass("active").animate({
             opacity: 1
         },
-        600)
+        500)
 }
 
 var timer_slide;
@@ -58,3 +61,68 @@ var timer_slide;
 function _createTimer() {
     window.clearInterval(timer_slide)
 }
+
+jQuery(document).ready(function($) {
+    $(window).load(function() {
+        /* Act on the event */
+        var h1 = $(window).outerHeight();
+        var w1 = $(window).width()
+        var h2 =  $('.intro').height();
+        var h3 = $('.case-top').height();
+        if(w1 > 768) {
+            $('.tab-con .item').height(h1 - h2);
+        } else {
+            if(isSafari) {
+                $('.tab-con .item').height(560);
+
+            }else {
+                $('.tab-con .item').height(h1 - h2 + 60);
+            }
+        }
+        if(h3 < 180) {
+            $('.slogan').css({
+                "font-size":"24px",
+                "margin-top":"5px"
+            });
+        }
+        if(h3 >= 180) {
+            $('.slogan').css({
+                "font-size":"36px",
+                "margin-top":"20px"
+            });
+        }
+    });
+    $(window).resize(function(event) {
+        /* Act on the event */
+        var h1 = $(window).outerHeight();
+        var w1 = $(window).width();
+        var h2 =  $('.intro').height();
+        var h3 = $('.case-top').height();
+        if(w1 > 768) {
+            $('.tab-con .item').height(h1 - h2);
+        } else {
+            if(isSafari) {
+
+                $('.tab-con .item').height(560);
+            }else {
+                $('.tab-con .item').height(h1 - h2 + 60);
+            }
+        }
+
+        if(h3 < 180) {
+            $('.slogan').css({
+                "font-size":"24px",
+                "margin-top":"5px"
+            });
+        }
+
+        if(h3 >= 180) {
+            $('.slogan').css({
+                "font-size":"36px",
+                "margin-top":"20px"
+            });
+        }
+
+    });
+
+});

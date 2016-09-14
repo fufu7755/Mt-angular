@@ -1,0 +1,28 @@
+<div class="content-top"></div>
+<div class="content-holder">
+    <div class="coop-title">
+        <div class="disp-table">
+            <div class="disp-table-cell valign-mid">
+                <div class="title3 text-center">
+                    <div ng-bind-html="trustAsHtml(Settings.field_home_coop_text)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coop-pic">
+        <div class="container">
+            <div class="coop_bg" style="background-image: url({{Settings.field_home_coop_image}})">
+            </div>
+        </div>
+    </div>
+    <div class="coop-client">
+        <div class="container">
+            <ul class="portfolio-items">
+                <li class="clients-item" ng-repeat="logo in coopLogos">
+                    <div class="client" style="background-image: url({{logo}});"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
