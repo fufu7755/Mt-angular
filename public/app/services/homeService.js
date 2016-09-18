@@ -16,6 +16,19 @@ angular
             return promise;
         },
 
+        getLogo: function () {
+            promise = $http({
+                method: 'GET',
+                url: baseUrl + 'slide_logos',
+                params: {},
+            }).success(function (response) {
+                return response.result;
+            }).error(function (data, status) {
+                console.log(status);
+            });
+            return promise;
+        },
+
         getSettings: function () {
             promise = $http({
                 method: 'GET',

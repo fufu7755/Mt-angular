@@ -4,7 +4,11 @@ angular
     homeService.getSlide().then(function(data) {
         $scope.Slides = data.data;
         $scope.Slide_length = data.data.length;
-        console.log(data.data);
+    });
+
+    homeService.getLogo().then(function(data) {
+        $scope.Logos = data.data;
+        console.log($scope.Logos);
     });
 
   }]);

@@ -3,10 +3,10 @@
         <div class="case-top">
             <div class="disp-table padding-header">
                 <div class="disp-table-cell valign-mid">
-                    <div class="text-center">
+                    <div class="text-center hidden">
                         <img class="logo" src="assets/img/logo_white.png" alt="">
                     </div>
-                    <div class="slogan">打造世界领先的产品、服务和用户体验</div>
+                    <div class="slogan" ng-bind-html="trustAsHtml(Settings.field_home_second_text)"></div>
                 </div>
             </div>
         </div>
@@ -87,10 +87,10 @@
         <div class="case-top">
             <div class="disp-table padding-header">
                 <div class="disp-table-cell valign-mid">
-                    <div class="text-center">
+                    <div class="text-center hidden">
                         <img class="logo" src="assets/img/logo_white.png" alt="">
                     </div>
-                    <div class="slogan">打造世界领先的产品、服务和用户体验</div>
+                    <div class="slogan" ng-bind-html="trustAsHtml(Settings.field_home_third_text)"></div>
                 </div>
             </div>
         </div>
@@ -192,6 +192,25 @@
         </div>
     </div>
 </section>
+
+<section class="mobile-section" style="height: 360px;">
+    <div class="content-top">
+        <div class="team-title text-center" ng-bind-html="trustAsHtml(Settings.field_home_team_text)">
+        </div>
+    </div>
+    <div class="content-holder class-content" style="background-image: url({{Settings.field_home_team_image}})">
+        <div class="awards text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 text-center" ng-repeat="logo in teamLogos">
+                        <img class="award-logo img-responsive" src="{{logo}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="" style="background-color: #fff;">
     <div class="title5 text-center">
         我们是一家商业洞察驱动用户体验创新的公司
