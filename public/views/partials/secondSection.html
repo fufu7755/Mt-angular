@@ -11,71 +11,18 @@
     </div>
     <div class="case-box">
         <ul class="portfolio-items">
-            <li class="wide">
-                <div class="work-item" style="background-image:url(assets/img/case1.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
+            <li ng-repeat="case in case1" ng-class="{'wide': $index % 6  == 5 || $index % 6 == 0}">
+                <a href="case/{{case.nid}}" target="_blank">
+                    <div class="work-item" style="background-image:url({{case.field_cover}})"></div>
+                    <div class="image-extra">
+                        <div class="extra-content">
+                            <div class="inner-extra">
+                                <h2 class="extra-title">{{case.title}}</h2>
+                                <h6 class="extra-category">{{case.body}}</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="work-item" style="background-image:url(assets/img/case2.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="work-item" style="background-image:url(assets/img/case3.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="work-item" style="background-image:url(assets/img/case4.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="work-item" style="background-image:url(assets/img/case5.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="wide">
-                <div class="work-item" style="background-image:url(assets/img/case6.jpg)"></div>
-                <div class="image-extra">
-                    <div class="extra-content">
-                        <div class="inner-extra">
-                            <h2 class="extra-title">木马工业设计</h2>
-                            <h6 class="extra-category">交互设计</h6>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </li>
         </ul>
     </div>

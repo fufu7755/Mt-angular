@@ -1,5 +1,5 @@
 <div class="globalhead"></div>
-<div id="header" class="">
+<div id="header" class="" ng-controller="headerController">
     <div class="container">
         <!-- begin navbar-header -->
         <div class="navbar-header">
@@ -17,8 +17,8 @@
         <!-- begin navbar-collapse -->
         <div class="collapse navbar-collapse" id="header-navbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active">
-                    <a href="#">案例</a>
+                <li ng-class="setActive('cases')">
+                    <a href="/cases">案例</a>
                     <b></b>
                 </li>
                 <li>

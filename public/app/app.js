@@ -15,15 +15,16 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
     $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', { templateUrl: 'views/pages/home.html' })
-      .when('/alliances', { templateUrl: 'views/pages/alliances.html' })
-      .when('/alliances/:allianceId/clubs', { templateUrl: 'views/pages/clubs.html' })
-      .when('/alliances/:allianceId/clubs/:clubId', { templateUrl: 'views/pages/club.html' })
-      .when('/matches', { templateUrl: 'views/pages/matches.html' })
+      .when('/cases', { templateUrl: 'views/pages/cases.html' })
+      .when('/alliances/:allianceId/clubs', { templateUrl: 'views/pages/cases.html' })
       .otherwise({ redirectTo: '/' });
 }]).run([
     '$rootScope',
     '$location',
     function ($rootScope, $location, userService) {
+        if($location.path() == '/') {
+            $rootScope.bodyClass = 'homePage';
+        }
     }
 ]);
 

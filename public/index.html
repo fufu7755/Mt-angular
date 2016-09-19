@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="lib/angularjs-toaster/toaster.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fu.css">
-
-
+    <link rel="stylesheet" href="assets/css/case.css">
 
     <script src="https://use.typekit.net/rgg6cez.js"></script>
     <script>
@@ -29,7 +28,7 @@
     </script>
     <base href="/">
 </head>
-<body>
+<body class="{{bodyClass}}">
 
     <div ng-view></div>
 
@@ -50,8 +49,11 @@
 
     <script src="app/controllers/homeslideController.js"></script>
     <script src="app/controllers/homesettingsController.js"></script>
+    <script src="app/controllers/headerController.js"></script>
+    <script src="app/controllers/casesController.js"></script>
 
     <script src="app/services/homeService.js"></script>
+    <script src="app/services/casesService.js"></script>
 
     <script src="app/directives/windowResize.js"></script>
 
