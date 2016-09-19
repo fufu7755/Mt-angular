@@ -12,6 +12,11 @@
         console.log(data.data);
     });
 
+    homeService.getHomecase2().then(function(data) {
+        $scope.case2 = data.data;
+        console.log(data.data);
+    });
+
     $scope.trustAsHtml = $sce.trustAsHtml;
 
   }]);
