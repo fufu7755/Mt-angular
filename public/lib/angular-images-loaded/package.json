@@ -1,0 +1,58 @@
+{
+  "name": "angular-images-loaded",
+  "version": "0.2.4",
+  "description": "Super simple Angular directive to wrap imagesLoaded plugin",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://homerjam@github.com/homerjam/angular-images-loaded.git"
+  },
+  "keywords": [
+    "angular",
+    "imagesloaded",
+    "waitforimages"
+  ],
+  "author": {
+    "name": "jameshomer85@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homerjam/angular-images-loaded/issues"
+  },
+  "homepage": "https://github.com/homerjam/angular-images-loaded",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "imagesloaded": "^4.1.0"
+  },
+  "gitHead": "639ccb62b461c68c9253bf822262f2969c5d4b30",
+  "_id": "angular-images-loaded@0.2.4",
+  "_shasum": "bc2e3cb52447bf5bb3bf35deb0262d80a14859da",
+  "_from": "angular-images-loaded@latest",
+  "_npmVersion": "3.8.1",
+  "_nodeVersion": "6.3.1",
+  "_npmUser": {
+    "name": "homerjam",
+    "email": "jameshomer85@gmail.com"
+  },
+  "dist": {
+    "shasum": "bc2e3cb52447bf5bb3bf35deb0262d80a14859da",
+    "tarball": "https://registry.npmjs.org/angular-images-loaded/-/angular-images-loaded-0.2.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "homerjam",
+      "email": "jameshomer85@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-images-loaded-0.2.4.tgz_1471344272114_0.9983222007285804"
+  },
+  "_resolved": "https://registry.npmjs.org/angular-images-loaded/-/angular-images-loaded-0.2.4.tgz"
+}

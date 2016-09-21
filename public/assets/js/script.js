@@ -3,7 +3,7 @@ var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
     navigator.userAgent && !navigator.userAgent.match('CriOS');
 
 window.onload = function() {
-    $('body').addClass('firstSection');
+    $('body.homePage').addClass('firstSection');
 }
 
 window.setTimeout(function () {
@@ -119,6 +119,23 @@ jQuery(document).ready(function($) {
             });
         }
 
+    });
+
+});
+
+jQuery(document).ready(function($) {
+    if ($("body").hasClass("transparent")){
+        $("body").addClass("js-transparent");
+    }
+
+    $(window).scroll(function(){
+
+        if ($(window).scrollTop() > 50) {
+            $(".js-transparent").removeClass("transparent");
+        }
+        else {
+            $(".js-transparent").addClass("transparent");
+        }
     });
 
 });

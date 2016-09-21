@@ -16,14 +16,20 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
     $routeProvider
       .when('/', { templateUrl: 'views/pages/home.html' })
       .when('/cases', { templateUrl: 'views/pages/cases.html' })
-      .when('/alliances/:allianceId/clubs', { templateUrl: 'views/pages/cases.html' })
+      .when('/case/:caseId', { templateUrl: 'views/pages/case.html' })
       .otherwise({ redirectTo: '/' });
 }]).run([
     '$rootScope',
     '$location',
-    function ($rootScope, $location, userService) {
+    '$route',
+    function ($rootScope, $location) {
+        var currentRoute = $location.path().split('/');
+
         if($location.path() == '/') {
             $rootScope.bodyClass = 'homePage';
+        }
+        if(currentRoute[1] == 'case') {
+            $rootScope.bodyClass = 'transparent';
         }
     }
 ]);

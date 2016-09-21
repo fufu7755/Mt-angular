@@ -8,14 +8,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My AngularJS App</title>
+    <title>Mass Thinker</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/angularjs-toaster/toaster.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fu.css">
-    <link rel="stylesheet" href="assets/css/case.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/angularjs-toaster/toaster.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/fu.css">
+    <link rel="stylesheet" href="/assets/css/case.css">
 
     <script src="https://use.typekit.net/rgg6cez.js"></script>
     <script>
@@ -28,37 +30,37 @@
     </script>
     <base href="/">
 </head>
-<body class="{{bodyClass}}">
-
+<body class="{{bodyClass}}" ng-controller="mainController">
     <div ng-view></div>
 
-    <script src='assets/js/jquery-2.1.4.min.js'></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src='/assets/js/jquery-2.1.4.min.js'></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 
-    <script src="lib/angular/angular.js"></script>
+    <script src="/lib/angular/angular.js"></script>
 
-    <script src="lib/angular-ui-utils/ui-utils.min.js"></script>
-    <script src="lib/angular-route/angular-route.min.js"></script>
-    <script src="lib/angularjs-toaster/toaster.min.js"></script>
-    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="lib/angularUtils-pagination/dirPagination.js"></script>
-    <script src="lib/ngstorage/ngStorage.min.js"></script>
-    <script src="lib/lodash/dist/lodash.min.js"></script>
-    <script src="lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
-    <script src="app/app.js"></script>
+    <script src="/lib/angular-ui-utils/ui-utils.min.js"></script>
+    <script src="/lib/angular-route/angular-route.min.js"></script>
+    <script src="/lib/angularjs-toaster/toaster.min.js"></script>
+    <script src="/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/lib/angularUtils-pagination/dirPagination.js"></script>
+    <script src="/lib/ngstorage/ngStorage.min.js"></script>
+    <script src="/lib/lodash/dist/lodash.min.js"></script>
+    <script src="/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/app/app.js"></script>
 
-    <script src="app/controllers/homeslideController.js"></script>
-    <script src="app/controllers/homesettingsController.js"></script>
-    <script src="app/controllers/headerController.js"></script>
-    <script src="app/controllers/casesController.js"></script>
+    <script src="/app/controllers/homeslideController.js"></script>
+    <script src="/app/controllers/homesettingsController.js"></script>
+    <script src="/app/controllers/headerController.js"></script>
+    <script src="/app/controllers/casesController.js"></script>
+    <script src="/app/controllers/mainController.js"></script>
 
-    <script src="app/services/homeService.js"></script>
-    <script src="app/services/casesService.js"></script>
+    <script src="/app/services/homeService.js"></script>
+    <script src="/app/services/casesService.js"></script>
 
-    <script src="app/directives/windowResize.js"></script>
-
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="/app/directives/windowResize.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 
 </body>
