@@ -1,0 +1,65 @@
+
+.culture-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 130px;
+    color: #cecece;
+    font-size: 32px;
+}
+
+.t_m_list {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.t_m_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.t_m_list ul li {
+    float: left;
+    width: 16.66666%;
+    height: 100%;
+    min-height: 360px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.business h4 em {
+    font-style: normal;
+    color: #02b0d2;
+}
+
+.top_b {
+    height: 910px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .top_b {
+        height: 380px;
+    }
+
+    .t_m_list ul li {
+         min-height: 148px;
+        width: 33.33%;
+     }
+
+    .culture-title {
+        bottom: 30px;
+    }
+
+    .business h4 em {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}

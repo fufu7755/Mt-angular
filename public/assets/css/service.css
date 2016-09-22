@@ -43,6 +43,8 @@
 .business h4 {
     text-align: center;
     font-size: 21px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
 }
 
 .service-item .info-pic {
