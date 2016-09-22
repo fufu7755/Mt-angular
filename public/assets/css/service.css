@@ -1,0 +1,133 @@
+
+.serviceTop {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.service-title {
+    font-size: 32px;
+    color: #cecece;
+    bottom: 130px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.service-box {
+    width: 100%;
+    height: 140px;
+    margin: 0 auto;
+    /* padding-top: 71px; */
+    background-color: #00b5d9;
+    overflow: hidden;
+}
+
+.business {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    overflow: hidden;
+    color: #3f3f3f;
+    font-family: HYPED, sans-serif;
+}
+
+.business h3 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.business h4 {
+    text-align: center;
+    font-size: 21px;
+}
+
+.service-item .info-pic {
+    height: 250px;
+}
+
+.service_list {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.service_list ul {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.service_list ul li {
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 368px;
+}
+
+.service_list ul li.wide {
+    width: 50%;
+}
+
+.business h4 p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-us {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .service_list ul li.wide {
+        width: 100%;
+    }
+
+    .service_list ul li {
+        min-height: 146px;
+        width: 50%;
+    }
+
+    .service-item ul.portfolio-items >li {
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .service-item .info-pic {
+        height: 100px;
+    }
+
+    .business h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .business h3 {
+        text-align: center;
+        font-size: 24px;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .business {
+        padding: 20px 0;
+    }
+
+    .service-title {
+        bottom: 30px;
+    }
+
+    .contact-us {
+        margin-bottom: 40px;
+    }
+}

@@ -136,6 +136,8 @@ ul.case-items li:hover .image-extra {
 
 .c_center img {
     padding: 50px 0 40px 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .share_b {
@@ -200,6 +202,10 @@ ul.portfolio-items.related_list li {
     width: 100%;
     max-width: 100%;
     position: relative;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 @media (max-width: 768px) {

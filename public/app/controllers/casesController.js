@@ -11,4 +11,10 @@ angular
         $scope.ready = true;
     });
 
+    if($routeParams.caseId) {
+        casesService.getCase().then(function(data) {
+            $scope.cases = data.data;
+        });
+    }
+
   }]);

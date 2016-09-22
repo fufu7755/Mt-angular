@@ -69,6 +69,8 @@ jQuery(document).ready(function($) {
         var w1 = $(window).width()
         var h2 =  $('.intro').height();
         var h3 = $('.case-top').height();
+
+
         if(w1 > 768) {
             $('.tab-con .item').height(h1 - h2);
         } else {
@@ -118,8 +120,9 @@ jQuery(document).ready(function($) {
                 "font-size":"36px"
             });
         }
-
     });
+
+
 
 });
 

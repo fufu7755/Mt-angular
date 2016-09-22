@@ -16,8 +16,10 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
     $routeProvider
       .when('/', { templateUrl: 'views/pages/home.html' })
       .when('/cases', { templateUrl: 'views/pages/cases.html' })
-      .when('/case/:caseId', { templateUrl: 'views/pages/case.html' })
-      .otherwise({ redirectTo: '/' });
+      .when('/cases/:caseId', { templateUrl: 'views/pages/case.html' })
+        .when('/service', { templateUrl: 'views/pages/service.html' })
+
+        .otherwise({ redirectTo: '/' });
 }]).run([
     '$rootScope',
     '$location',
@@ -28,7 +30,11 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
         if($location.path() == '/') {
             $rootScope.bodyClass = 'homePage';
         }
-        if(currentRoute[1] == 'case') {
+        if(currentRoute[1] == 'cases' && currentRoute[2]) {
+            $rootScope.bodyClass = 'transparent caseShow';
+        }
+
+        if(currentRoute[1] == 'service') {
             $rootScope.bodyClass = 'transparent';
         }
     }

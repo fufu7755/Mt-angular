@@ -13,7 +13,19 @@ angular
           console.log(status);
         });
         return promise;
-      }
+      },
+        getCase: function (caseId) {
+            promise = $http({
+                method: 'GET',
+                url: baseUrl + 'case',
+                params: { nid: caseId }
+            }).success(function (response) {
+                return response;
+            }).error(function (data, status) {
+                console.log(status);
+            });
+            return promise;
+        }
     };
 
     return output;
