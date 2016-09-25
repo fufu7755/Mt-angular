@@ -19,6 +19,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         .when('/cases/:caseId', {templateUrl: 'views/pages/case.html'})
         .when('/service', {templateUrl: 'views/pages/service.html'})
         .when('/culture', {templateUrl: 'views/pages/culture.html'})
+        .when('/training', {templateUrl: 'views/pages/training.html'})
 
         .otherwise({redirectTo: '/'});
 }]).run([
@@ -40,6 +41,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         }
 
         if (currentRoute[1] == 'culture') {
+            $rootScope.bodyClass = 'transparent';
+        }
+
+        if (currentRoute[1] == 'training') {
             $rootScope.bodyClass = 'transparent';
         }
     }
