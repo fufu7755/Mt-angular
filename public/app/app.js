@@ -20,6 +20,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         .when('/service', {templateUrl: 'views/pages/service.html'})
         .when('/culture', {templateUrl: 'views/pages/culture.html'})
         .when('/training', {templateUrl: 'views/pages/training.html'})
+        .when('/ux', {templateUrl: 'views/pages/ux.html'})
 
         .otherwise({redirectTo: '/'});
 }]).run([

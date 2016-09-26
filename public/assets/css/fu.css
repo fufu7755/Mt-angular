@@ -1431,7 +1431,7 @@ ul.portfolio-items >li.info-item {
     }
 
     #header {
-        height: 49px;
+        height: 50px;
     }
 
     .firstSection .navbar-nav >li {
@@ -1806,9 +1806,6 @@ ul.portfolio-items >li.info-item {
         background-image: url(../img/sm1.jpg) !important;
     }
 
-    .copyright .phone2 {
-        font-size: 18px;
-    }
 }
 
 @media (min-width: 768px) {

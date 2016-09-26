@@ -36,8 +36,352 @@
     background-position: right center;
 }
 
-.t_center .title_box b {
+.t_center .title_box img {
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+.book_list {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.book_list ul {
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.book_list ul li {
+    width: 50%;
+    min-height: 198px;
+    float: left;
+    padding: 15px 0 15px 15px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.book_list ul li .left {
+    float: left;
+    width: 120px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+}
+
+.book_list ul li .left p {
+    width: 113px;
+    height: 156px;
+    position: absolute;
+    background-image: url(../img/book_bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    overflow: hidden;
+}
+
+.book_list ul li .left .book-price {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.book_list ul li .left .book-price img {
+    margin: 7px 0 0 1px;
+}
+
+.book_list ul li .right {
+    float: left;
+    width: 418px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.book_list ul li .right h3 {
+    font-size: 22px;
+    text-align: left;
+    margin: 0;
+}
+
+.book_list ul li .right h4 {
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.book_list ul li .right h5 {
+    font-size: 17px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+.t_center .t_m {
+    margin-top: 30px;
+}
+
+.t_center .approve {
+    padding: 60px 0 0px 0;
+    color: #3f3f3f;
+}
+
+.t_center .approve h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.t_center .approve p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 21px;
+    color: #666;
+    margin-top: 29px;
+
+}
+
+.t_center .title_box .center2 {
+    margin: 0 auto;
+    padding: 30px 95px 30px 0;
+    font-size: 32px;
+    color: #fff;
+    background-image: url(../img/cpm.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.approve_list {
+    padding: 50px 0 0 0;
+}
+
+.process {
+    padding-top: 50px;
+}
+
+.t_center .approve p {
+    text-align: center;
+    font-size: 21px;
+    color: #666;
+    margin-top: 29px;
+}
+
+.develop {
+    padding-top: 60px;
+}
+
+.develop h2 {
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.time p {
+    margin-top: 30px;
+}
+
+.apply_box {
+    width: 40%;
+    margin: 0 auto;
+    padding: 60px 0 10px 0;
+    text-align: center;
+}
+
+.button.apply {
+    padding: 16px 40px;
+    font-size: 36px;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: #02b0d2;
+    display: inline-block;
+    position: relative;
+}
+
+.button.apply:hover {
+    text-decoration: none;
+    background-color: #252628;
+    border-color: transparent;
+    color: #fff;
+}
+
+.sign_box {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sign_box ul {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sign_box ul li {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.sign_box input[type="text"] {
+    display: inline-block;
+    padding: 16px 10px;
+    width: 93%;
+    outline: none;
+    background-color: #fff;
+    color: #666;
+    font-size: 18px;
+    border: 1px solid #cdcdcd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.sign_box ul li:nth-child(odd) input[type="text"] {
+    float: left;
+}
+
+.sign_box ul li:nth-child(even) input[type="text"] {
+    float: right;
+}
+
+.sign_box p {
+    width: 100%;
+    text-align: left;
+    display: block;
+    float: left;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+.a_phone {
+    padding: 20px 0 0 0;
+    overflow: hidden;
+    color: #a7a7a7;
+    margin-bottom: 30px;
+}
+
+.a_phone h4 {
+    width: 35%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.a_phone p {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*在线报名*/
+.sign_box{
+    margin-top: 60px;
+    display: none;
+}
+
+.sign_box input[type="text"]:focus{border-color: #04d5fe;
+    -webkit-box-shadow: 0 0 10px 1px rgba(4,213,254, .7);
+    box-shadow: 0 0 10px 1px rgba(4,213,254, .7);}
+.sign_box input {
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.sign_box label{ width:100%; text-align:left; display:block; float:left; padding:10px 0 10px 10px; font-size:16px; color:#999;}
+.sign_box a{ margin-top:50px;}
+
+@media (max-width: 1024px) {
+    .book_list ul li {
+        width: 100%;
+    }
+    .book_list ul li .right {
+        width: 70%;
+    }
+
+    .button.apply {
+        padding: 10px 15px;
+        font-size: 25px;
+    }
+
+    .develop h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .book_list ul li .right {
+        width: 60%;
+    }
+
+    .a_phone h4 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .button.apply {
+        font-size: 18px;
+    }
+
+    .training-title {
+        font-size: 20px;
+        bottom: 40px;
+    }
+
+    .t_center .c_title {
+        font-size: 20px;
+    }
+
+    .book_list ul li .right h3 {
+        font-size: 16px;
+    }
+
+    .book_list ul li .right h4 {
+        font-size: 12px;
+    }
+
+    .book_list ul li .right h5 {
+        font-size: 14px;
+    }
+
+    .t_center .title_box .center1 {
+        font-size: 24px;
+    }
+
+    .t_center .c_title {
+        height: 70px;
+        line-height: 80px;
+    }
+
+    .t_center .title_box .center2 {
+        font-size: 24px;
+    }
+
+    .t_center .approve h2 {
+        font-size: 20px;
+    }
+
+    .t_center .approve p {
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        margin-top: 29px;
+    }
+
+    .approve_list img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+
+
 }
