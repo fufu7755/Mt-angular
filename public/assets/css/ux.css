@@ -1,0 +1,68 @@
+.ux-first-top {
+    position: relative;
+    height: 45%;
+    width: 100%;
+}
+
+.ct_h {
+    text-align: center;
+}
+
+.zhit {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    text-align: center;
+    font-size: 22px;
+    color: #90d9ff;
+}
+
+.chuang_list {
+}
+
+.chuang_list .chuang_list_item .i_logo {
+    width: 145px;
+    height: 164px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/chuang_icon.png);
+    background-repeat: no-repeat;
+}
+
+.chuang_list .chuang_list_item .title_box {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+}
+
+.chuang_list .chuang_list_item p {
+    margin-top: 10%;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.chuang_list .i2 {
+    background-position: -169px -2px;
+}
+
+.chuang_list .i3 {
+    background-position: -347px -2px;
+}
+
+.chuang_list .i4 {
+    background-position: -529px -2px;
+}
+
+.box-title {
+    font-size: 32px;
+}
+
+.ux-text {
+    font-size: 24px;
+}
+
+.c_bg {
+    height: 100%;
+}

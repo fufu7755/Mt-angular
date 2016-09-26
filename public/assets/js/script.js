@@ -2,10 +2,6 @@
 var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
     navigator.userAgent && !navigator.userAgent.match('CriOS');
 
-window.onload = function() {
-    $('body.homePage').addClass('firstSection');
-}
-
 window.setTimeout(function () {
         $(".tab-btn .item").eq(0).trigger("click")
     },

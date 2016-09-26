@@ -31,7 +31,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         var currentRoute = $location.path().split('/');
 
         if ($location.path() == '/') {
-            $rootScope.bodyClass = 'homePage';
+            $rootScope.bodyClass = 'homePage firstSection';
         }
         if (currentRoute[1] == 'cases' && currentRoute[2]) {
             $rootScope.bodyClass = 'transparent caseShow';
@@ -47,6 +47,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
 
         if (currentRoute[1] == 'training') {
             $rootScope.bodyClass = 'transparent';
+        }
+
+        if (currentRoute[1] == 'ux') {
+            $rootScope.bodyClass = 'uxPage firstSection';
         }
     }
 ]);

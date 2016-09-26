@@ -19,9 +19,11 @@ function parallaxScroll(evt) {
   }
   if (currentSlideNumber == 0) {
     $('body.homePage').addClass('firstSection');
+    $('body.uxPage').addClass('firstSection');
   }
   if (currentSlideNumber != 0) {
     $('body.homePage').removeClass('firstSection');
+    $('body.uxPage').removeClass('firstSection');
   }
   if (isFirefox) {
     //Set delta for Firefox
