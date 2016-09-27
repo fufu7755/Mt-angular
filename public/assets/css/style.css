@@ -214,3 +214,7 @@
 .uxPage .background:nth-child(7) {
   z-index: 4;
 }
+
+.uxPage .background:nth-child(8) {
+  z-index: 3;
+}
