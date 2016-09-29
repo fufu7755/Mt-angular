@@ -124,6 +124,11 @@
     position: relative;
     display: block;
     height: 180px;
+    min-height: 120px;
+}
+
+.team_list ul li:nth-of-type(even) {
+    background: #e9e6e6;
 }
 
 .team_img {
@@ -139,7 +144,6 @@
     padding: 10px 0 5px 0;
     font-size: 25px;
     text-align: center;
-    color: #333;
 }
 
 .case-text {
@@ -186,7 +190,7 @@
     }
 
     .chuang_list .chuang_list_item .title_box {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 100;
     }
 
@@ -198,8 +202,80 @@
         font-size: 15px;
     }
 
+    .ux-first-top {
+        height: 60%
+    }
+
+    .zhit {
+        bottom: 0;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .uxPage .background {
+        height: auto;
+        position: relative;
+    }
+
+    .uxPage .case-top {
+        height: 120px;
+    }
+
+    .uxPage .case-box {
+        height: auto;
+    }
+
+    .uxPage ul.portfolio-items >li {
+        height: 220px;
+    }
+
+    .uxPage .content-wrapper {
+        height: auto;
+    }
+
     .team_list ul li {
         width: 50%;
     }
 
+    .team_list ul li .team_img {
+        height: 220px;
+        background-size: cover;
+    }
+
+    .team_list_item h3 {
+        font-size: 20px;
+    }
+
+    .team_list_item h4 {
+        font-size: 16px;
+    }
+
+    .team_list_item p {
+        font-size: 14px;
+    }
+
+    .uxPage ul.case-box-items li {
+        height: auto;
+    }
+
+    .case-box-items li .c_bg {
+        height: 180px;
+    }
+
+    .case-title {
+        font-size: 18px;
+    }
+
+    .case-text {
+        font-size: 16px;
+    }
+
+    .way_box {
+        position: relative;
+        bottom: 0;
+    }
+
+    .uxPage .copyright {
+        position: relative;
+    }
 }

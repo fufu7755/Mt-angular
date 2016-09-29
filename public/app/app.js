@@ -21,6 +21,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         .when('/culture', {templateUrl: 'views/pages/culture.html'})
         .when('/training', {templateUrl: 'views/pages/training.html'})
         .when('/ux', {templateUrl: 'views/pages/ux.html'})
+        .when('/ai', {templateUrl: 'views/pages/ai.html'})
 
         .otherwise({redirectTo: '/'});
 }]).run([
@@ -51,6 +52,10 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
 
         if (currentRoute[1] == 'ux') {
             $rootScope.bodyClass = 'uxPage firstSection';
+        }
+
+        if (currentRoute[1] == 'ai') {
+            $rootScope.bodyClass = 'aiPage transparent';
         }
     }
 ]);

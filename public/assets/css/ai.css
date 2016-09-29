@@ -1,0 +1,140 @@
+
+.aiPage.transparent .brand-logo {
+    background: url(../img/logo-ai.png) 0 0 no-repeat;
+}
+
+.aiPage .brand-logo {
+    height:30px;
+    background: url(../img/logo-ai-2.png) 0 0 no-repeat;
+}
+
+.ai-title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #27fff7;
+}
+
+.ai-text {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+.apply-items {
+    margin: 0;
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.apply-item {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.apply-title {
+    font-size: 21px;
+    text-align: center;
+}
+
+.s_ai_items {
+    margin: 0;
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.s_ai_item {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    min-height: 340px !important;
+}
+
+.s_ai_item_title {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-weight: 200;
+}
+
+.s_ai_item p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+.ai_s_items {
+    margin: 0;
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.ai_s {
+    margin-bottom: 40px;
+}
+
+.ai_s_item {
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+.ai_s_item p {
+    padding: 15px;
+    line-height: 1.8em;
+}
+
+@media (max-width: 768px) {
+    .aiPage.transparent .brand-logo {
+        background: url(../img/logo-ai-2.png) 0 0 no-repeat;
+        background-size: 132px;
+        width: 132px;
+    }
+
+    .ai-title {
+        font-size: 24px;
+    }
+
+    .ai-text {
+        font-size: 16px;
+    }
+
+    .apply-item {
+        width: 50%;
+    }
+
+    .apply-item img {
+        zoom: 0.8;
+    }
+
+    .apply-title {
+        font-size: 16px;
+    }
+
+    .s_ai_item {
+        width: 50%;
+    }
+
+    .ai_s_item {
+        width: 50%;
+    }
+
+    .s_ai_item_title {
+        font-size: 18px;
+    }
+
+    .s_ai_item p {
+        font-size: 14px;
+    }
+}
