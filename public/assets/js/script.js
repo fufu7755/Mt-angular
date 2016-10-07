@@ -137,20 +137,6 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $(document).on("click", "#signup", function() {
-        console.log("click");
-        $(".sign_box").show("slow").css("top","465px");
-        //$(".sign_box").show();
-        $(".apply_box").hide();
-
-    });
-
-    $(document).on("click", "#submit-but", function() {
-        console.log("click");
-        $(".sign_box").hide();
-        //$(".sign_box").show();
-        $(".apply_box").show();
-    });
 
 });
 

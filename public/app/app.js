@@ -6,7 +6,8 @@ angular.module('hshs', [
     'ngStorage',
     'toaster',
     'angularUtils.directives.dirPagination',
-    'ui.mask'
+    'ui.mask',
+    'ngAnimate'
 ]).
 constant(
     'baseUrl', 'http://data-soul.nodefu.net/api/'
@@ -22,6 +23,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         .when('/training', {templateUrl: 'views/pages/training.html'})
         .when('/ux', {templateUrl: 'views/pages/ux.html'})
         .when('/ai', {templateUrl: 'views/pages/ai.html'})
+        .when('/contact', {templateUrl: 'views/pages/contact.html'})
 
         .otherwise({redirectTo: '/'});
 }]).run([

@@ -1,4 +1,4 @@
-var allTestFiles = [];
+    var allTestFiles = [];
 var TEST_REGEXP = /(spec|test)\.js$/i;
 
 var pathToModule = function(path) {

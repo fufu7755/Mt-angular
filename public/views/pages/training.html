@@ -244,21 +244,57 @@
                 <div class="time">
                     <p><img class="img-responsive" src="assets/img/develop.jpg"></p>
                 </div>
-                <div class="apply_box">
-                    <a class="button apply" id="signup">立即报名</a>
+
+                <div ng-controller="ContactController">
+                    <div class="sign_box" ng-show="signBox">
+                        <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
+                            <ul>
+                                <li ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                                    <input ng-model="formData.inputName" type="text"
+                                           class="" id="inputName" name="inputName" placeholder="真实姓名:" required>
+                                </li>
+
+                                <li ng-class="{ 'has-error': contactform.inputPhone.$invalid && submitted }">
+                                    <input ng-model="formData.inputPhone" type="text"
+                                           class="" id="inputPhone" name="inputPhone" placeholder="联系电话:" required>
+                                </li>
+
+                                <li ng-class="{ 'has-error': contactform.inputCourse.$invalid && submitted }">
+                                    <input ng-model="formData.inputCourse" type="text"
+                                           class="" id="inputCourse" name="inputCourse" placeholder="报名课程:" required>
+                                </li>
+
+                                <li ng-class="{ 'has-error': contactform.inputCount.$invalid && submitted }">
+                                    <input ng-model="formData.inputCount" type="text"
+                                           class="" id="inputCount" name="inputCount" placeholder="报名人数:" required>
+                                </li>
+
+                                <li ng-class="{ 'has-error': contactform.inputJob.$invalid && submitted }">
+                                    <input ng-model="formData.inputJob" type="text"
+                                           class="" id="inputJob" name="inputJob" placeholder="目前职业:" required>
+                                </li>
+
+                                <li ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                                    <input ng-model="formData.inputEmail" type="email" class="" id="inputEmail" name="inputEmail" placeholder="电子邮件:" required>
+                                </li>
+
+                            </ul>
+                            <p>请将您的作品集发送至：train@massthinker.com</p>
+
+                            <button class="button apply">
+                                提交并发送
+                            </button>
+                        </form>
+                    </div>
+                    <p>{{resultMessage}}</p>
+                    <div class="apply_box" ng-hide="signBox">
+                        <button class="button apply" id="signup" ng-click="signBox = !signBox">立即报名</button>
+                    </div>
                 </div>
-                <div class="sign_box">
-                    <ul>
-                        <li><input type="text" name="" id="" placeholder="真实姓名:"></li>
-                        <li><input type="text" name="" id="" placeholder="联系电话:"></li>
-                        <li><input type="text" name="" id="" placeholder="报名课程:"></li>
-                        <li><input type="text" name="" id="" placeholder="报名人数:"></li>
-                        <li><input type="text" name="" id="" placeholder="目前职业:"></li>
-                        <li><input type="text" name="" id="" placeholder="电子邮箱:"></li>
-                    </ul>
-                    <p>请将您的作品集发送至：train@massthinker.com</p>
-                    <a href="#" ng-click="reloadRoute()" class="button apply" id="submit-but">提交并发送</a>
-                </div>
+
+
+
+
                 <div class="a_phone">
                     <h4><em>报名电话 : 021-6226-9898</em> </h4>
                     <h4>报名邮箱 : train@massthinker.com</h4>
