@@ -4,7 +4,7 @@
   "description": "Gulp MEAN TDD",
   "author": "fu <fufu7755@gmail.com>",
   "scripts": {
-    "start": "node server.js"
+    "stanrt": "node server.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
