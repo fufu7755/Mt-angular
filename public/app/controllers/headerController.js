@@ -6,8 +6,4 @@ angular
       return menuItem == currentRoute[1] ? "active" : "";
     }
 
-    $scope.reloadRoute = function() {
-        $window.location.reload();
-    }
-
   }]);

@@ -15,14 +15,37 @@ constant(
 config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
     $routeProvider
-        .when('/', {templateUrl: 'views/pages/home.html'})
-        .when('/cases', {templateUrl: 'views/pages/cases.html'})
-        .when('/cases/:caseId', {templateUrl: 'views/pages/case.html'})
-        .when('/service', {templateUrl: 'views/pages/service.html'})
-        .when('/culture', {templateUrl: 'views/pages/culture.html'})
-        .when('/training', {templateUrl: 'views/pages/training.html'})
-        .when('/ux', {templateUrl: 'views/pages/ux.html'})
-        .when('/ai', {templateUrl: 'views/pages/ai.html'})
+        .when('/', {
+            templateUrl: 'views/pages/home.html',
+            className: 'homePage firstSection'
+        })
+        .when('/cases', {
+            templateUrl: 'views/pages/cases.html',
+            className: 'transparent'
+        })
+        .when('/cases/:caseId', {
+            templateUrl: 'views/pages/case.html',
+            className: 'transparent caseShow'
+        })
+        .when('/service', {
+            templateUrl: 'views/pages/service.html',
+            className: 'transparent'
+        })
+        .when('/culture', {
+            templateUrl: 'views/pages/culture.html',
+            className: 'transparent'
+        })
+        .when('/training', {
+            templateUrl: 'views/pages/training.html',
+            className: 'transparent'
+        })
+        .when('/ux', {
+            templateUrl: 'views/pages/ux.html'
+        })
+        .when('/ai', {
+            templateUrl: 'views/pages/ai.html',
+            className: 'aiPage transparent'
+        })
         .when('/contact', {templateUrl: 'views/pages/contact.html'})
 
         .otherwise({redirectTo: '/'});
@@ -30,7 +53,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
     '$rootScope',
     '$location',
     '$route',
-    function ($rootScope, $location) {
+    function ($rootScope, $location, $route) {
         var currentRoute = $location.path().split('/');
 
         if ($location.path() == '/') {
