@@ -21,30 +21,30 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
         })
         .when('/cases', {
             templateUrl: 'views/pages/cases.html',
-            className: 'transparent'
+            className: 'js-transparent transparent'
         })
         .when('/cases/:caseId', {
             templateUrl: 'views/pages/case.html',
-            className: 'transparent caseShow'
+            className: 'js-transparent transparent caseShow'
         })
         .when('/service', {
             templateUrl: 'views/pages/service.html',
-            className: 'transparent'
+            className: 'js-transparent transparent'
         })
         .when('/culture', {
             templateUrl: 'views/pages/culture.html',
-            className: 'transparent'
+            className: 'js-transparent transparent'
         })
         .when('/training', {
             templateUrl: 'views/pages/training.html',
-            className: 'transparent'
+            className: 'js-transparent transparent'
         })
         .when('/ux', {
             templateUrl: 'views/pages/ux.html'
         })
         .when('/ai', {
             templateUrl: 'views/pages/ai.html',
-            className: 'aiPage transparent'
+            className: 'aiPage js-transparent transparent'
         })
         .when('/contact', {templateUrl: 'views/pages/contact.html'})
 
@@ -54,34 +54,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
     '$location',
     '$route',
     function ($rootScope, $location, $route) {
-        var currentRoute = $location.path().split('/');
 
-        if ($location.path() == '/') {
-            $rootScope.bodyClass = 'homePage firstSection';
-        }
-        if (currentRoute[1] == 'cases' && currentRoute[2]) {
-            $rootScope.bodyClass = 'transparent caseShow';
-        }
-
-        if (currentRoute[1] == 'service') {
-            $rootScope.bodyClass = 'transparent';
-        }
-
-        if (currentRoute[1] == 'culture') {
-            $rootScope.bodyClass = 'transparent';
-        }
-
-        if (currentRoute[1] == 'training') {
-            $rootScope.bodyClass = 'transparent';
-        }
-
-        if (currentRoute[1] == 'ux') {
-            $rootScope.bodyClass = 'uxPage firstSection';
-        }
-
-        if (currentRoute[1] == 'ai') {
-            $rootScope.bodyClass = 'aiPage transparent';
-        }
     }
 ]);
 
