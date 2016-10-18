@@ -20,8 +20,7 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
             className: 'homePage firstSection'
         })
         .when('/cases', {
-            templateUrl: 'views/pages/cases.html',
-            className: 'js-transparent transparent'
+            templateUrl: 'views/pages/cases.html'
         })
         .when('/cases/:caseId', {
             templateUrl: 'views/pages/case.html',

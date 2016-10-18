@@ -35,7 +35,7 @@
     </script>
     <base href="/">
 </head>
-<body ng-controller="mainController" class="{{routeClassName}}">
+<body ng-controller="mainController" ng-class="routeClassName">
     <div ng-view [autoscroll="false"]></div>
 
     <script src='/assets/js/jquery-2.1.4.min.js'></script>
@@ -65,6 +65,7 @@
     <script src="/app/services/casesService.js"></script>
 
     <script src="/app/directives/windowResize.js"></script>
+    <script src="/app/directives/scroll.js"></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/script.js"></script>

@@ -123,9 +123,6 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function($) {
-    if ($("body").hasClass("transparent")){
-        $("body").addClass("js-transparent");
-    }
 
     $(window).scroll(function(){
 
