@@ -17,10 +17,12 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
     $routeProvider
         .when('/', {
             templateUrl: 'views/pages/home.html',
-            className: 'homePage firstSection'
+            className: 'homePage firstSection',
+
         })
         .when('/cases', {
-            templateUrl: 'views/pages/cases.html'
+            templateUrl: 'views/pages/cases.html',
+
         })
         .when('/cases/:caseId', {
             templateUrl: 'views/pages/case.html',
