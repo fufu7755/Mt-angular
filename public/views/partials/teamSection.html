@@ -1,5 +1,5 @@
-<div class="content-top"></div>
-<div class="content-holder class-content" style="background-image: url({{Settings.field_home_team_image}})">
+<div class="content-top hidden-xs"></div>
+<div class="content-holder class-content hidden-xs" style="background-image: url({{Settings.field_home_team_image}})">
     <div class="team-title text-center" ng-bind-html="trustAsHtml(Settings.field_home_team_text)">
     </div>
     <div class="awards text-center">
@@ -12,3 +12,21 @@
         </div>
     </div>
 </div>
+
+<section class="mobile-section hidden-lg hidden-md hidden-sm" style="height: 360px;">
+    <div class="content-top">
+        <div class="team-title text-center" ng-bind-html="trustAsHtml(Settings.field_home_team_text)">
+        </div>
+    </div>
+    <div class="content-holder class-content" style="background-image: url({{Settings.field_home_team_image}})">
+        <div class="awards text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 text-center" ng-repeat="logo in teamLogos">
+                        <img class="award-logo img-responsive" src="{{logo}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

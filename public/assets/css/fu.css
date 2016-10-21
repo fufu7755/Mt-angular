@@ -1407,6 +1407,11 @@ ul.portfolio-items >li.info-item {
     .case-top {
         padding: 15px 0;
         text-align: center;
+        height: 120px;
+    }
+
+    .case-box {
+        height: auto;
     }
 
     .padding-header {
@@ -1806,6 +1811,51 @@ ul.portfolio-items >li.info-item {
         background-image: url(../img/sm1.jpg) !important;
     }
 
+    .homePage .background {
+        height: auto;
+        position: relative;
+    }
+
+    .homePage .background.first-section {
+        height: 100vh;
+    }
+
+    .homePage .content-wrapper {
+        height: auto;
+    }
+
+    .homePage .first-section .content-wrapper {
+        height: 100vh;
+    }
+    .slogan {
+        font-size: 24px;
+    }
+
+    .content-holder {
+        height: 100%;
+    }
+
+    .class-title {
+        font-size: 24px;
+    }
+    .class-name {
+        font-size: 16px;
+    }
+
+    .coop-title {
+        height: auto;
+    }
+    .coop-pic {
+        height: auto;
+    }
+    .coop-client {
+        height: auto;
+    }
+
+    .copyright .phone2 {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1823,10 +1873,6 @@ ul.portfolio-items >li.info-item {
 }
 
 @media (max-width: 414px) {
-    .slogan {
-        margin-top: 10px;
-        font-size: 16px;
-    }
 
     ul.portfolio-items >li {
         height: 25%;
@@ -1903,21 +1949,6 @@ ul.portfolio-items >li.info-item {
         margin-bottom: 0;
     }
 
-    .background:nth-child(5) {
-        background-image: url(../img/coop-small.jpg);
-    }
-
-    .background:nth-child(6) {
-        background-image: url(../img/team-small.jpg);
-    }
-
-    .background:nth-child(6) .title3 {
-        font-size: 24px;
-        color: #666;
-        padding-top: 0;
-        position: absolute;
-        top: 50%;
-    }
 
     .demo-3 li img {
         width: 80%;

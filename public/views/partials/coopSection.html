@@ -1,5 +1,5 @@
-<div class="content-top"></div>
-<div class="content-holder">
+<div class="content-top hidden-xs"></div>
+<div class="content-holder hidden-xs">
     <div class="coop-title">
         <div class="disp-table">
             <div class="disp-table-cell valign-mid">
@@ -26,3 +26,21 @@
         </div>
     </div>
 </div>
+
+<section class="mobile-section hidden-lg hidden-md hidden-sm" style="">
+    <div class="title3 text-center" ng-bind-html="trustAsHtml(Settings.field_home_coop_text)"></div>
+    <div class="container">
+        <div class="coop_bg">
+            <img class="img-responsive" src="{{Settings.field_home_coop_image}}" />
+        </div>
+        <div class="client-logo">
+            <div class="netoph">
+                <ul class="portfolio-items">
+                    <li class="clients-item" ng-repeat="logo in coopLogos">
+                        <div class="client"><img class="img-responsive" src="{{logo}}" /></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

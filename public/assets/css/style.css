@@ -130,14 +130,10 @@
 }
 
 .homePage .background:nth-child(8) {
-
-}
-
-.homePage .background:nth-child(9) {
   background-image: url(../img/world3.jpg);
 }
 
-.homePage .background:nth-child(9) .content-wrapper {
+.homePage .background:nth-child(8) .content-wrapper {
   background-image: url(../img/place.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,10 +173,6 @@
 
 .homePage .background:nth-child(8) {
   z-index: 3;
-}
-
-.homePage .background:nth-child(9) {
-  z-index: 2;
 }
 
 

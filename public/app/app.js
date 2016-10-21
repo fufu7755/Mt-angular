@@ -41,7 +41,8 @@ config(['$routeProvider', '$locationProvider', function ($routeProvider, $locati
             className: 'js-transparent transparent'
         })
         .when('/ux', {
-            templateUrl: 'views/pages/ux.html'
+            templateUrl: 'views/pages/ux.html',
+            className: 'uxPage firstSection'
         })
         .when('/ai', {
             templateUrl: 'views/pages/ai.html',
